@@ -54,10 +54,13 @@ The "Flavanoids Statistics" component provides the following functionality:
 
 * Dynamic Display: The component dynamically displays the statistics in a tabular format, making it easy to compare the results for different classes. It displays the mean, median, and mode for each class in separate columns.
 
-License
+# License
 This component is provided under an open-source license. You are free to use and modify it for your projects. Please refer to the license file included with this component for more details.
 
-If you have any questions or need further assistance, please don't hesitate to reach out.
+# Author 
+Author: Deepa Gupta
+
+Email: deepa403246@gmail.com
 
 
 
