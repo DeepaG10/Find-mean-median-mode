@@ -1,6 +1,8 @@
 # Flavanoids Statistics Component
 The "Flavanoids Statistics" component is a React class component that calculates and displays statistics for the "Flavanoids" property in a given dataset. This README provides an overview of the component and how to use it.
 
+<img width="726" alt="image" src="https://github.com/DeepaG10/Find-mean-median-mode/assets/145286265/796528a8-5736-47c5-a0d8-bce41c2d9872">
+
 # Table of Contents
 * Introduction
 * Prerequisites
@@ -8,6 +10,7 @@ The "Flavanoids Statistics" component is a React class component that calculates
 * Usage
 * Component Overview
 * License
+  
 # Introduction
 The "Flavanoids Statistics" component is designed to analyze a dataset containing wine data. It calculates and displays statistics such as the mean, median, and mode for the "Flavanoids" property, classifying the data based on the "Alcohol" property. The component uses React to create a dynamic and interactive display of the statistics.
 
