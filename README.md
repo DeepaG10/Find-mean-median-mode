@@ -1,100 +1,64 @@
-# Usage
-* Clone or download the repository to your local machine.
-* Navigate to the project directory.
-* Install the required dependencies using npm or yarn:
+# Flavanoids Statistics Component
+The "Flavanoids Statistics" component is a React class component that calculates and displays statistics for the "Flavanoids" property in a given dataset. This README provides an overview of the component and how to use it.
 
-bash
-```
-npm install
-# or
-yarn install
-```
-* Start the development server:
+# Table of Contents
+* Introduction
+* Prerequisites
+* Installation
+* Usage
+* Component Overview
+* License
+# Introduction
+The "Flavanoids Statistics" component is designed to analyze a dataset containing wine data. It calculates and displays statistics such as the mean, median, and mode for the "Flavanoids" property, classifying the data based on the "Alcohol" property. The component uses React to create a dynamic and interactive display of the statistics.
 
-bash
-```
-npm start
-# or
-yarn start
-```
-* Access the application in your web browser at http://localhost:3000.
-* In the textarea provided, enter addresses and corresponding amounts. Each address and amount should be separated by a space, and each pair should be on a separate line. For example:
+# Prerequisites
+Before using this component, you should have the following prerequisites:
 
-```
-0x8B3392483BA26D65E331dB86D4F430E9B3814E5e 15
-0x2C1BbAa9B34b5D8A6E850a6A734FBa705F34a3aC 25
-```
-* Click the "Submit" button to validate and process the input.
-* If there are any validation errors, they will be displayed below the textarea.
-* Use the "Keep First Occurrence" button to remove duplicate addresses, keeping only the first occurrence.
-* Use the "Combine Balances" button to sum the balances of addresses that occur multiple times.
-* The addresses and their corresponding amounts will be displayed in a list below the buttons.
+* Node.js and npm (Node Package Manager) installed on your development environment.
+* A React project in which you want to integrate this component.
+* A dataset in JSON format containing wine data. In the provided code, the dataset is imported from a file named "Wine-Data.json." Make sure you have a similar dataset or update the import statement accordingly.
 
 # Installation
-If you wish to integrate the Disperse component into your existing React project, follow these steps:
+To use the "Flavanoids Statistics" component in your React project, follow these steps:
 
-* Install the package via npm or yarn:
-
-bash
-```
-npm install @your-organization/disperse-component
-# or
-yarn add @your-organization/disperse-component
-```
-* Import the component in your React application:
+* Copy the code of the component into a new or existing React component file.
+* Make sure you have the wine dataset (JSON file) available at the specified path or update the import statement to point to your dataset.
+* Integrate the component into your project by importing it and rendering it where needed.
+Example usage in a React component:
 
 javascript
 ```
-import Disperse from "@your-organization/disperse-component";
-```
-* Utilize the Disperse component within your application.
+import React from 'react';
+import FlavanoidsStatistics from './FlavanoidsStatistics'; // Update the import path
 
-# Getting Started with Development
-To get started with development on this component, follow these steps:
+function App() {
+  return (
+    <div>
+      <FlavanoidsStatistics />
+    </div>
+  );
+}
+export default App;
+```
+# Usage
+Once you have integrated the component into your project, it will display statistics for the "Flavanoids" property based on the "Alcohol" classes. When you render the component, it will automatically calculate and display the mean, median, and mode for each class.
 
-* Clone the repository to your local machine:
+To use the component effectively, ensure that the dataset is correctly imported, and the component is rendered within your application.
 
-bash
-```
-git clone https://github.com/your-username/disperse-component.git
-```
-* Navigate to the project directory:
- 
-bash
-```
-cd disperse-component
-```
-* Install the required dependencies:
+# Component Overview
+The "Flavanoids Statistics" component provides the following functionality:
 
-bash
-```
-npm install
-# or
-yarn install
-```
-* Start the development server:
+* Data Import: It imports a JSON dataset containing wine data, assuming it is located at the specified path. Make sure to replace the dataset with your actual data.
 
-bash
-```
-npm start
-# or
-yarn start
-```
-* You can now make modifications to the `Disperse` component and test them in a local development environment.
+* Statistics Calculation: The component calculates statistics for the "Flavanoids" property based on unique "Alcohol" classes. It calculates the mean, median, and mode for each class and stores the results in an object.
 
-# Address Validation
-The component employs a basic regular expression for address validation. You can replace it with more robust validation logic as required. Here's the validation function used in the component:
+* Dynamic Display: The component dynamically displays the statistics in a tabular format, making it easy to compare the results for different classes. It displays the mean, median, and mode for each class in separate columns.
 
-javascript
-```
-const isValidAddress = (address) => {
-  return /^0x[a-fA-F0-9]{40}$/.test(address);
-};
-```
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
+License
+This component is provided under an open-source license. You are free to use and modify it for your projects. Please refer to the license file included with this component for more details.
 
-# Author
-Author: Deepa Gupta
+If you have any questions or need further assistance, please don't hesitate to reach out.
 
-Email: deepa403246@gmail.com
+
+
+
